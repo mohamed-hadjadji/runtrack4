@@ -39,7 +39,7 @@
 	</header>
 	<main> 
 		<h1 class="  text-secondary text-center  ">LaPlateforme_</h1>
-		<section class="row justify-content-around">
+		<section class="row col-md justify-content-around">
 			<div class="card" style="width: 18rem;">
 			  <img src="https://amazon.clikpic.com/michelbury/images/Morpho_bleu_sur_feuille_ver.jpg" class="card-img-top" alt="...">
 			  <div class="card-body">
@@ -88,7 +88,7 @@
 					  							
 		</section>
 		<br/>
-		<section class="row justify-content-center">
+		<section class="row col-md justify-content-center">
 			<div class="col-4 ">
 				<h5 class="row justify-content-end">Installation de AI 9000</h5>
 				<div class="progress">
@@ -97,7 +97,7 @@
 			</div>
 		</section>
 		<br/><br/>
-		<section class="row justify-content-around">
+		<section class="row col-md justify-content-around">
 			<article class="col-4">
 				<h5 class="">Recevez votre copie gratuite d'internet 2!</h5>
 				<div class="col-auto">
@@ -164,6 +164,7 @@
             </article>
 
 		</section>
+		<br/><br/>
    </main>
 		
 
