@@ -81,3 +81,16 @@ class user
     }
 
 }
+
+class presence
+{
+   public function reservation($dated,$datef,$iduser)
+   {
+      $connexion = new PDO('mysql:host=localhost;dbname=bigjob', 'root', '');
+
+      $requete= $connexion->query("INSERT INTO presenses (datedebut,datefin, id_user) VALUES ('$dated', '$datef','$iduser')");
+
+      header('Location: calendrier.php');
+   }
+}
+?>
