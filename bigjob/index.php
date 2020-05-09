@@ -92,6 +92,24 @@ if(!isset($_SESSION['email']))
                                 <input type='password' class="form-control" name='mdp2' placeholder="Confirmation mot de passe" required>
                             </div>
                         </div>
+                        <div>
+                             <?php
+                                    if(isset($_GET['erreur1']))
+                                    {
+                                        $err = $_GET['erreur1'];
+                                        if($err==1 || $err==2)
+                                            echo "<p class='erreur'><b>*Email existe déja !!</b></p>*";
+                                    }
+
+                                    if(isset($_GET['erreur2']))
+                                    {
+                                        $err = $_GET['erreur2'];
+                                        if($err==1 || $err==2)
+                                            echo "<p class='erreur'><b>Les mots de passe doivent être identique!</b></p>";
+                                    }
+                                    
+                            ?>
+                        </div>
                         <div class="bout">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="inscription">Inscription</button>
                         </div>

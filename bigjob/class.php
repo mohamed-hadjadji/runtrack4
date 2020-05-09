@@ -25,7 +25,7 @@ class user
             if ($resultat[$key][1]==$_POST['email'])
             {
                $trouve=true;
-               echo "<p class='erreur'><b>Email existe déja !!</b></p>";
+               header('Location: index.php?erreur1=1'); // Email existe déja
             }
            }
            if ($trouve==false)
@@ -37,7 +37,7 @@ class user
            }
            else
            {
-              echo "<p class='erreur'><b>Les mots de passe doivent être identique!</b></p>";
+              header('Location: index.php?erreur2=1'); // Les mots de passe doivent être identique
            }	
     }
 
