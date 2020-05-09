@@ -1,0 +1,22 @@
+.container{
+	margin-top: 200px;
+	padding: 50px;
+	margin-bottom: 150px;
+}
+
+.text-center{
+	color: white;
+	margin-bottom: 50px;
+}
+
+.bout{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.foot{
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}

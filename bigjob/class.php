@@ -31,7 +31,7 @@ class user
            if ($trouve==false)
            {
             $sql = $connexion->query( "INSERT INTO utilisateurs (email,nom,prenom,password,rank)
-                VALUES ('$email','$nom','$prenom','$mdp','eleve')");      
+                VALUES ('$email','$nom','$prenom','$mdp','moderateur')");      
             header('location:index.php');
             }
            }
@@ -91,6 +91,14 @@ class presence
       $requete= $connexion->query("INSERT INTO presenses (datedebut,datefin, id_user) VALUES ('$dated', '$datef','$iduser')");
 
       header('Location: calendrier.php');
+   }
+
+   public function get_reservation()
+   {
+      $connexion = new PDO('mysql:host=localhost;dbname=bigjob', 'root', '');
+
+      $requeteres = $connexion->query("SELECT nom,prenom,datedebut,datefin FROM utilisateurs INNER JOIN presences WHERE utilisateurs.id = id_user");
+     
    }
 }
 ?>
