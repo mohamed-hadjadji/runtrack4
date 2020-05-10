@@ -16,7 +16,7 @@ if(isset($_GET['deconnexion']))
 if(!isset($_SESSION['email']))
 {
       
-    include("class.php");
+    include("include/class.php");
 	
     $user = new user();
 
@@ -60,6 +60,7 @@ if(!isset($_SESSION['email']))
                                     
                             ?>
                     </form>
+                </nav>
             </header>
             <main>
                 <section class="container navbar-dark bg-dark">
