@@ -31,7 +31,7 @@ class user
            if ($trouve==false)
            {
             $sql = $connexion->query( "INSERT INTO utilisateurs (email,nom,prenom,password,rank)
-                VALUES ('$email','$nom','$prenom','$mdp','moderateur')");      
+                VALUES ('$email','$nom','$prenom','$mdp','Elève')");      
             header('location:index.php');
             }
            }
@@ -68,6 +68,7 @@ class user
             
                 $_SESSION['email'] = $_POST['email'];
                 $_SESSION['id'] = $reponse4[0];
+
                
                 header('Location: calendrier.php');
                 }
