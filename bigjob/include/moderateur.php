@@ -1,5 +1,5 @@
 <section class="container">
-    	<h2>Liste des Membres</h2>
+    	<h2 align="center">Liste des Membres</h2>
         <table class="table table-dark">
         	<tr>
 				<th scope="col">Prénom</th>

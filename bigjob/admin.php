@@ -34,11 +34,10 @@ if (isset($_SESSION['email']))
 	if($_SESSION['rank']=='Admin')
 
     {
-	echo "Bienvenue Boss";
 	?>
 
     <section class="container">
-    	<h2>Liste des Membres</h2>
+    	<h2 align="center">Liste des Membres</h2>
         <table class="table table-dark">
 
         	<tr>
@@ -80,7 +79,7 @@ if (isset($_SESSION['email']))
     </section>
    
     <section class="container">
-    	<h2>Modifier Le Statut des membres</h2>
+    	<h2 align="center">Modifier Le Statut des membres</h2>
     	<form method="post" class="statform bg-dark">
     		<div class="form-row">
                 <div class="col my-4">

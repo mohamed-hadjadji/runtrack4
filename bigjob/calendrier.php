@@ -29,6 +29,7 @@ if (isset($_SESSION['email']))
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
 	  <script type="text/javascript" src="js/agenda_script.js"></script>
+	  <link rel="stylesheet" type="text/css" href="styles/style.css">
 	  <title>Agenda</title>
     </head>
 
@@ -39,76 +40,27 @@ if (isset($_SESSION['email']))
 		        <?php
 	            if($_SESSION['rank']=='Admin' || $_SESSION['rank']=='Modérateur')
 	            {?>
-		        	<a class="navbar-brand" href="admin.php">Administrateur</a>
+	            	<div class="row justify-content-between">
+		        	<span><a class="navbar-brand" href="admin.php">Administrateur</a></span>
 		        	<?php
 		        }?>
 		            <span><a class="navbar-brand" href="index.php?deconnexion=true">Déconnexion</a></span>
+		            </div>
 		        </nav>
 		        
 		</header>
 
 		<br />
-	  <h2 align="center"><a href="#">Jquery Fullcalandar Integration with PHP and Mysql</a></h2>
-	  <br />
-	  <div class="container">
-	   <div id="calendar"></div>
-	  </div>
-		
-	    <section>
-	        <form action='' method='POST'>
-			     <div class="container">
-		          <div class="row">
-		            <div class='col-sm-6'>
-		                <div class="form-group">
-		                	<p>Date et heure d'entrée: </p>
-		                    <div class='input-group date' id='datetimepicker1'>
-		                        <input type='text' name='datedebut' class="form-control" />
-		                        <span class="input-group-addon">
-		                            <span class="glyphicon glyphicon-calendar"></span>
-		                        </span>
-		                    </div>
-		                </div>
-		            </div>
-
-		            <script type="text/javascript">
-		                $(function () {
-		                    $('#datetimepicker1').datetimepicker();
-		                });
-		            </script>
-		          </div>
-		       </div>
-		       <div class="container">
-		          <div class="row">
-		            <div class='col-sm-6'>
-		                <div class="form-group">
-		                	<p>Date et heure de sortie: </p>
-		                    <div class='input-group date' id='datetimepicker2'>
-		                        <input type='text' name='datefin' class="form-control" />
-		                        <span class="input-group-addon">
-		                            <span class="glyphicon glyphicon-calendar"></span>
-		                        </span>
-		                    </div>
-		                </div>
-		            </div>
-		            
-		            <script type="text/javascript">
-		                $(function () {
-		                    $('#datetimepicker2').datetimepicker();
-		                });
-		            </script>
-		          </div>
-		       </div>
-		       <input type='submit' name='reserver' value='Valider'>
-	        </form>
-	    </section>
-	  
-
-
-	</body>
-
-	  
-	    
-
+		  
+		  <div class="container">
+		  	<h3 align="center">Faites votre demande de présence directement sur l'agenda</h3>
+		  <br />
+		     <div id="calendar"></div>
+		  </div>
+        <footer class="foot navbar-dark bg-dark">
+            <p> Copyright 2020 Coding School | All Rights Reserved | Project by Mohamed HADJADJI</p>
+        </footer>
+	</body>	  
 	<?php	
 }
 else
